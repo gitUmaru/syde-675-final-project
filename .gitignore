@@ -4,3 +4,4 @@ venv/
 wandb/
 # logs/
 notebooks/test-data/*
+vista.egg-info/

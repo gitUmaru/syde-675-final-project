@@ -10,4 +10,4 @@ shapely
 scikit-learn
 imagecodecs
 wandb
-# -e .    
+-e .    pip 
