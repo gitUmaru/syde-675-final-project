@@ -1,8 +1,0 @@
-2026-04-07 11:28:37.546 | INFO     | src.analysis.eda:load_data:65 - Loading hyperspectral data via DataModule...
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:80 - Loaded NiliFossae: (478, 593, 425)
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:88 - Loaded NiliFossae ground truth: (478, 593)
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:80 - Loaded Utopia: (478, 595, 432)
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:88 - Loaded Utopia ground truth: (478, 595)
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:80 - Loaded holden: (418, 595, 440)
-2026-04-07 11:28:42.833 | INFO     | src.analysis.eda:load_data:88 - Loaded holden ground truth: (418, 595)
-2026-04-07 11:29:12.219 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.
