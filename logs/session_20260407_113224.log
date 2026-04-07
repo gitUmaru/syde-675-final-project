@@ -1,0 +1,13 @@
+2026-04-07 11:32:24.527 | INFO     | src.analysis.eda:run_complete_analysis:830 - Starting comprehensive exploratory data analysis...
+2026-04-07 11:32:24.527 | INFO     | src.analysis.eda:load_data:65 - Loading hyperspectral data via DataModule...
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:80 - Loaded NiliFossae: (478, 593, 425)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:88 - Loaded NiliFossae ground truth: (478, 593)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:80 - Loaded Utopia: (478, 595, 432)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:88 - Loaded Utopia ground truth: (478, 595)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:80 - Loaded holden: (418, 595, 440)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:load_data:88 - Loaded holden ground truth: (418, 595)
+2026-04-07 11:32:29.204 | INFO     | src.analysis.eda:run_complete_analysis:838 - Computing comprehensive statistics...
+2026-04-07 11:33:08.101 | INFO     | src.analysis.eda:run_complete_analysis:841 - Generating publication-quality visualizations...
+2026-04-07 11:33:09.291 | INFO     | src.analysis.eda:plot_overview_table:179 - Saved: 01_dataset_overview.png
+2026-04-07 11:33:09.442 | INFO     | src.analysis.eda:plot_spatial_dimensions:206 - Saved: 02_spatial_dimensions.png
+2026-04-07 11:33:09.469 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.
