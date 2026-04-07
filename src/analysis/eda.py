@@ -219,7 +219,7 @@ class HyMarsEDA:
             ('snr', 'Signal-to-Noise Ratio', 5)
         ]
         
-        colors_datasets = {'Holden': '#FF6B6B', 'NiliFossae': '#4ECDC4', 'Utopia': '#45B7D1'}
+        colors_datasets = {'holden': '#FF6B6B', 'NiliFossae': '#4ECDC4', 'Utopia': '#45B7D1'}
         
         for ax, (metric, title, idx) in zip(axes, metrics):
             for key in sorted(self.datasets.keys()):
@@ -496,7 +496,7 @@ class HyMarsEDA:
         fig, axes = plt.subplots(2, 2, figsize=(14, 10))
         axes = axes.flatten()
         
-        colors_ds = {'Holden': '#FF6B6B', 'NiliFossae': '#4ECDC4', 'Utopia': '#45B7D1'}
+        colors_ds = {'holden': '#FF6B6B', 'NiliFossae': '#4ECDC4', 'Utopia': '#45B7D1'}
         
         ax = axes[0]
         for key in sorted(self.datasets.keys()):
@@ -762,7 +762,7 @@ class HyMarsEDA:
         ax.set_ylabel('Value', fontsize=11, fontweight='bold')
         ax.set_title('Global Intensity Statistics', fontsize=12, fontweight='bold')
         ax.set_xticks(x_pos)
-        ax.set_xticklabels([self.metadata[k]['name'].split('(')[1].replace(')', '') for k in keys])
+        ax.set_xticklabels([self.metadata[k]['name'] for k in keys])
         ax.legend(framealpha=0.95)
         ax.grid(True, alpha=0.3, axis='y')
         
@@ -781,7 +781,7 @@ class HyMarsEDA:
         ax2.set_ylabel('Pixels (thousands)', fontsize=11, fontweight='bold')
         ax.set_title('Data Dimensionality', fontsize=12, fontweight='bold')
         ax.set_xticks(x_pos)
-        ax.set_xticklabels([self.metadata[k]['name'].split('(')[1].replace(')', '') for k in keys])
+        ax.set_xticklabels([self.metadata[k]['name'] for k in keys])
         ax.grid(True, alpha=0.3, axis='y')
         
         ax = axes[2]
@@ -791,7 +791,7 @@ class HyMarsEDA:
         ax.set_ylabel('Average Dynamic Range', fontsize=11, fontweight='bold')
         ax.set_title('Spectral Dynamic Range', fontsize=12, fontweight='bold')
         ax.set_xticks(x_pos)
-        ax.set_xticklabels([self.metadata[k]['name'].split('(')[1].replace(')', '') for k in keys])
+        ax.set_xticklabels([self.metadata[k]['name'] for k in keys])
         ax.grid(True, alpha=0.3, axis='y')
         
         for bar in bars:
@@ -814,7 +814,7 @@ class HyMarsEDA:
         ax2.set_ylabel('Shannon Entropy', fontsize=11, fontweight='bold', color='black')
         ax.set_title('Data Quality Metrics', fontsize=12, fontweight='bold')
         ax.set_xticks(x_pos)
-        ax.set_xticklabels([self.metadata[k]['name'].split('(')[1].replace(')', '') for k in keys])
+        ax.set_xticklabels([self.metadata[k]['name'] for k in keys])
         ax.grid(True, alpha=0.3, axis='y')
         
         plt.suptitle('Inter-Dataset Comparative Analysis', 
