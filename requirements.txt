@@ -1,0 +1,13 @@
+torch
+torchvision
+torchaudio
+opencv-python
+tqdm
+loguru
+matplotlib
+geopandas
+shapely
+scikit-learn
+imagecodecs
+wandb
+# -e .    

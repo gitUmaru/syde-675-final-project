@@ -1,0 +1,6 @@
+venv/
+# data/
+*.pyc
+wandb/
+# logs/
+notebooks/test-data/*
