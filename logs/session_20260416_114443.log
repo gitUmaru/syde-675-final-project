@@ -1,0 +1,27 @@
+2026-04-16 11:44:43.644 | INFO     | __main__:run_complete_analysis:830 - Starting comprehensive exploratory data analysis...
+2026-04-16 11:44:43.645 | INFO     | __main__:load_data:65 - Loading hyperspectral data via DataModule...
+2026-04-16 11:44:49.211 | INFO     | __main__:load_data:80 - Loaded NiliFossae: (478, 593, 425)
+2026-04-16 11:44:49.212 | INFO     | __main__:load_data:88 - Loaded NiliFossae ground truth: (478, 593)
+2026-04-16 11:44:49.213 | INFO     | __main__:load_data:80 - Loaded Utopia: (478, 595, 432)
+2026-04-16 11:44:49.213 | INFO     | __main__:load_data:88 - Loaded Utopia ground truth: (478, 595)
+2026-04-16 11:44:49.213 | INFO     | __main__:load_data:80 - Loaded holden: (418, 595, 440)
+2026-04-16 11:44:49.213 | INFO     | __main__:load_data:88 - Loaded holden ground truth: (418, 595)
+2026-04-16 11:44:49.213 | INFO     | __main__:run_complete_analysis:838 - Computing comprehensive statistics...
+2026-04-16 11:45:25.207 | INFO     | __main__:run_complete_analysis:841 - Generating publication-quality visualizations...
+2026-04-16 11:45:26.822 | INFO     | __main__:plot_overview_table:179 - Saved: 01_dataset_overview.pdf
+2026-04-16 11:45:26.976 | INFO     | __main__:plot_spatial_dimensions:206 - Saved: 02_spatial_dimensions.pdf
+2026-04-16 11:45:27.964 | INFO     | __main__:plot_spectral_band_statistics:242 - Saved: 03_spectral_statistics.pdf
+2026-04-16 11:45:38.377 | INFO     | __main__:plot_intensity_distributions:273 - Saved: 04_intensity_distributions.pdf
+2026-04-16 11:45:42.106 | INFO     | __main__:plot_band_correlation_heatmap:303 - Saved: 05_band_correlation_heatmap.pdf
+2026-04-16 11:46:11.427 | INFO     | __main__:plot_pca_analysis:369 - Saved: 06_pca_analysis.pdf
+2026-04-16 11:46:12.043 | INFO     | __main__:plot_rgb_composites:408 - Saved: 07_rgb_composites.pdf
+2026-04-16 11:46:12.437 | INFO     | __main__:plot_ground_truth_analysis:457 - Saved: 08_ground_truth_analysis.pdf
+2026-04-16 11:46:14.838 | INFO     | __main__:plot_spectral_signature_analysis:492 - Saved: 09_spectral_signatures.pdf
+2026-04-16 11:46:15.039 | INFO     | __main__:plot_band_quality_assessment:552 - Saved: 10_band_quality_assessment.pdf
+2026-04-16 11:46:17.488 | INFO     | __main__:plot_spatial_statistics:592 - Saved: 11_spatial_statistics.pdf
+2026-04-16 11:46:24.225 | INFO     | __main__:plot_dimensionality_comparison:634 - Saved: 12_dimensionality_reduction.pdf
+2026-04-16 11:46:27.680 | INFO     | __main__:plot_missing_data_analysis:665 - Saved: 13_missing_data_analysis.pdf
+2026-04-16 11:47:44.287 | INFO     | __main__:plot_statistical_summary:741 - Saved: 14_statistical_summary.pdf
+2026-04-16 11:47:44.579 | INFO     | __main__:plot_inter_dataset_comparison:826 - Saved: 15_inter_dataset_comparison.pdf
+2026-04-16 11:47:44.580 | INFO     | __main__:run_complete_analysis:859 - EDA complete. All visualizations saved to: /Users/umar/Documents/Github/syde-675-final-project/output/eda
+2026-04-16 11:47:44.592 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.

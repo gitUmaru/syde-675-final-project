@@ -1,0 +1,3 @@
+2026-04-16 12:08:38.989 | INFO     | src.experiments.hymars_vca_fcls_experiment:setup:53 - Configured datasets: holden
+2026-04-16 12:08:39.937 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:83 - Fitting holden with 6 endmembers on 248710 pixels
+2026-04-16 12:08:40.014 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.

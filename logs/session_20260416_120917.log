@@ -1,0 +1,6 @@
+2026-04-16 12:09:22.607 | INFO     | src.experiments.hymars_vca_fcls_experiment:setup:53 - Configured datasets: holden
+2026-04-16 12:09:23.580 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:83 - Fitting holden with 6 endmembers on 248710 pixels
+2026-04-16 12:09:25.138 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:117 - holden: reconstruction_error=0.995637, abundance_sum_error=0.000000
+2026-04-16 12:09:27.350 | INFO     | src.experiments.hymars_vca_fcls_experiment:validate:241 - Validation summary: {'holden': {'reconstruction_error': 0.9956372976303101, 'abundance_sum_error': 1.1920928955078125e-07}}
+2026-04-16 12:09:27.351 | INFO     | src.experiments.hymars_vca_fcls_experiment:test:252 - Test summary: {'holden': {'reconstruction_error': 0.9956372976303101, 'abundance_sum_error': 1.1920928955078125e-07}}
+2026-04-16 12:09:27.351 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.

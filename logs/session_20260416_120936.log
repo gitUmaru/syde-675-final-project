@@ -1,0 +1,10 @@
+2026-04-16 12:09:41.231 | INFO     | src.experiments.hymars_vca_fcls_experiment:setup:53 - Configured datasets: NiliFossae, Utopia, holden
+2026-04-16 12:09:41.742 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:83 - Fitting NiliFossae with 9 endmembers on 283454 pixels
+2026-04-16 12:09:43.935 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:117 - NiliFossae: reconstruction_error=0.055123, abundance_sum_error=0.000000
+2026-04-16 12:09:47.509 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:83 - Fitting Utopia with 9 endmembers on 284410 pixels
+2026-04-16 12:09:49.272 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:117 - Utopia: reconstruction_error=0.010480, abundance_sum_error=0.000000
+2026-04-16 12:09:52.077 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:83 - Fitting holden with 6 endmembers on 248710 pixels
+2026-04-16 12:09:53.102 | INFO     | src.experiments.hymars_vca_fcls_experiment:_fit_single_dataset:117 - holden: reconstruction_error=0.995637, abundance_sum_error=0.000000
+2026-04-16 12:09:54.621 | INFO     | src.experiments.hymars_vca_fcls_experiment:validate:241 - Validation summary: {'NiliFossae': {'reconstruction_error': 0.055123139172792435, 'abundance_sum_error': 1.1920928955078125e-07}, 'Utopia': {'reconstruction_error': 0.010480386205017567, 'abundance_sum_error': 1.1920928955078125e-07}, 'holden': {'reconstruction_error': 0.9956372976303101, 'abundance_sum_error': 1.1920928955078125e-07}}
+2026-04-16 12:09:54.621 | INFO     | src.experiments.hymars_vca_fcls_experiment:test:252 - Test summary: {'NiliFossae': {'reconstruction_error': 0.055123139172792435, 'abundance_sum_error': 1.1920928955078125e-07}, 'Utopia': {'reconstruction_error': 0.010480386205017567, 'abundance_sum_error': 1.1920928955078125e-07}, 'holden': {'reconstruction_error': 0.9956372976303101, 'abundance_sum_error': 1.1920928955078125e-07}}
+2026-04-16 12:09:54.621 | INFO     | utils.logger:_on_exit:47 - Program execution completed. Logs saved.
