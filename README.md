@@ -1,29 +1,30 @@
-# VISTA
+# VISTAE
 <p align="center">
     <a href="https://github.com/gitUmaru/syde-675-final-project" target="_blank">
     <img align="center" alt="Hymap-logo" src="https://i.imgur.com/6X3sQFb.png" width="150" height="auto"/>
     </a>
 </p>
 <p align="center">
-<b>Vi</b>sualizing <b>S</b>pectral <b>T</b>ransformer <b>A</b>ttention: Towards Explainable Wavelength Dependencies in Hyperspectral Unmixing Transformers. This project focuses on hyperspectral unmixing, which is the process of decomposing hyperspectral imaging (HSI) response measurements into their constituent material spectral signatures (termed endmembers) and their corresponding fractional abundances.
+<b>Vi</b>sion <b>S</b>pectral <b>T</b>ransformer for <b>A</b>bundance <b>E</b>stimation
 </p>
 
 ---
 
 ## 📖 Project Overview
 
-While deep learning models, particularly vision transformers, have shown significant promise due to their ability to capture long-range sequential dependencies across spectral bands , they suffer from an inherent "black-box" nature. 
+Hyperspectral imaging (HSI) provides highly detailed electromagnetic responses across hundreds of closely sampled wavelengths, enabling precise discrimination of surface mineralogy. A fundamental objective in HSI analysis is hyperspectral unmixing: the process of decomposing these response measurements into their constituent material spectral signatures (endmembers) and their corresponding fractional abundances. 
 
-The inability to interpret the mechanistic logic behind predictions is especially problematic when dealing with the high dimensionality of HSI data. Redundant or noisy bands drastically increase the computational burden and can actively degrade model performance. 
+A major practical challenge in deep learning-based hyperspectral unmixing is the limited availability of reliable, continuous ground-truth abundance maps. While discrete classification datasets are more readily accessible, they fail to capture the inherently mixed nature of hyperspectral pixels. 
 
-To address this, we aim to train a vision transformer model to analyze high-dimensional HSI data on the HyMars benchmark dataset. We then apply Explainable AI (XAI) frameworks capable of identifying and filtering spectral noise while providing physically meaningful explanations for the model's predictions.
+**VISTAE** bridges the gap between discrete image classification and continuous abundance estimation. By reformulating traditional multi-class classification as a soft-clustering problem, this project leverages sparse classification datasets as weak priors. We implement a vision transformer-based autoencoder architecture to infer latent endmembers and extract continuous, sub-pixel fractional abundances, remaining robust to incomplete labeling and unknown material compositions. 
 
 ## 🎯 Research Objectives
 
-This project is driven by three primary objectives:
-1. <b>Model Development<b>: Develop a vision transformer to accurately decompose HSI pixels into their constituent endmembers and fractional abundances.
-2. <b>Interpretability<b>: Apply explainable AI to uncover the model's prediction logic and identify the most critical spectral bands.
-3. <b>Dimensionality Reduction<b>: Utilize these insights to filter out noisy bands, lowering computational complexity without sacrificing performance.
+This repository contains the codebase and experimental framework designed to achieve the following core objectives:
+
+1. **Latent Endmember Learning:** Develop a transformer-based model that performs robust hyperspectral unmixing through unsupervised spectral reconstruction and soft abundance estimation.
+2. **Weakly Supervised Prior Integration:** Incorporate sparse, discrete classification labels as weak priors to actively guide the soft-clustering process, anchoring the unconstrained latent space to known geological realities.
+3. **Comparative Benchmarking:** Evaluate the efficacy of the proposed spatial-spectral architecture against established classical baselines (e.g., Vertex Component Analysis) and state-of-the-art hybrid models (e.g., DeepTrans-HSU) on complex, heavily mixed planetary datasets.
 
 ## 👥 Authors
 * **Anthony Bertnyk** - Department of Systems Design Engineering, University of Waterloo
@@ -54,6 +55,7 @@ This project is driven by three primary objectives:
 ├── README.md
 └── requirements.txt
 ```
+
 ## 📊 Dataset: HyMars Benchmark
 
 The project utilizes the HyMars hyperspectral image classification benchmark dataset. The hyperspectral data for these three Martian scenes was captured by the **Compact Reconnaissance Imaging Spectrometer for Mars (CRISM)** instrument aboard the **Mars Reconnaissance Orbiter (MRO)**. 
