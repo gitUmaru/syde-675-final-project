@@ -173,10 +173,10 @@ class HyMarsEDA:
         plt.title('HyMars Dataset Overview Statistics', 
                  fontsize=13, fontweight='bold', pad=20)
         
-        plt.savefig(self.output_dir / '01_dataset_overview.png', 
+        plt.savefig(self.output_dir / '01_dataset_overview.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 01_dataset_overview.png")
+        logger.info("Saved: 01_dataset_overview.pdf")
     
     def plot_spatial_dimensions(self):
         """Visualize spatial dimensions of datasets."""
@@ -200,10 +200,10 @@ class HyMarsEDA:
         plt.suptitle('Spatial Dimensions of Hyperspectral Images', 
                     fontsize=13, fontweight='bold', y=1.02)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '02_spatial_dimensions.png', 
+        plt.savefig(self.output_dir / '02_spatial_dimensions.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 02_spatial_dimensions.png")
+        logger.info("Saved: 02_spatial_dimensions.pdf")
     
     def plot_spectral_band_statistics(self, stats):
         """Plot comprehensive spectral statistics across bands."""
@@ -236,10 +236,10 @@ class HyMarsEDA:
         plt.suptitle('Comprehensive Spectral Band Analysis', 
                     fontsize=14, fontweight='bold', y=0.995)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '03_spectral_statistics.png', 
+        plt.savefig(self.output_dir / '03_spectral_statistics.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 03_spectral_statistics.png")
+        logger.info("Saved: 03_spectral_statistics.pdf")
     
     def plot_intensity_distributions(self, stats):
         """Plot intensity distributions for each dataset."""
@@ -267,10 +267,10 @@ class HyMarsEDA:
         plt.suptitle('Intensity Distribution Analysis', 
                     fontsize=13, fontweight='bold', y=1.00)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '04_intensity_distributions.png', 
+        plt.savefig(self.output_dir / '04_intensity_distributions.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 04_intensity_distributions.png")
+        logger.info("Saved: 04_intensity_distributions.pdf")
     
     def plot_band_correlation_heatmap(self):
         """Plot correlation heatmaps for spectral bands (downsampled for clarity)."""
@@ -297,10 +297,10 @@ class HyMarsEDA:
         plt.suptitle('Spectral Band Correlation Analysis (Subsampled)', 
                     fontsize=13, fontweight='bold', y=1.00)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '05_band_correlation_heatmap.png', 
+        plt.savefig(self.output_dir / '05_band_correlation_heatmap.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 05_band_correlation_heatmap.png")
+        logger.info("Saved: 05_band_correlation_heatmap.pdf")
     
     def plot_pca_analysis(self):
         """Perform and visualize PCA analysis."""
@@ -363,10 +363,10 @@ class HyMarsEDA:
         plt.suptitle('Principal Component Analysis (PCA)', 
                     fontsize=13, fontweight='bold', y=0.995)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '06_pca_analysis.png', 
+        plt.savefig(self.output_dir / '06_pca_analysis.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 06_pca_analysis.png")
+        logger.info("Saved: 06_pca_analysis.pdf")
     
     def plot_rgb_composites(self):
         """Create synthetic RGB composites from principal components."""
@@ -402,10 +402,10 @@ class HyMarsEDA:
         plt.suptitle('Synthetic RGB Composites (Band Combination)', 
                     fontsize=13, fontweight='bold', y=0.98)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '07_rgb_composites.png', 
+        plt.savefig(self.output_dir / '07_rgb_composites.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 07_rgb_composites.png")
+        logger.info("Saved: 07_rgb_composites.pdf")
     
     def plot_ground_truth_analysis(self):
         """Analyze and visualize ground truth labels."""
@@ -451,10 +451,10 @@ class HyMarsEDA:
         plt.suptitle('Ground Truth Label Analysis', 
                     fontsize=13, fontweight='bold', y=0.995)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '08_ground_truth_analysis.png', 
+        plt.savefig(self.output_dir / '08_ground_truth_analysis.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 08_ground_truth_analysis.png")
+        logger.info("Saved: 08_ground_truth_analysis.pdf")
     
     def plot_spectral_signature_analysis(self, stats):
         """Analyze representative spectral signatures."""
@@ -486,10 +486,10 @@ class HyMarsEDA:
         plt.suptitle('Mean Spectral Signatures with Variability', 
                     fontsize=13, fontweight='bold', y=1.00)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '09_spectral_signatures.png', 
+        plt.savefig(self.output_dir / '09_spectral_signatures.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 09_spectral_signatures.png")
+        logger.info("Saved: 09_spectral_signatures.pdf")
     
     def plot_band_quality_assessment(self, stats):
         """Assess quality metrics for spectral bands."""
@@ -546,10 +546,10 @@ class HyMarsEDA:
         plt.suptitle('Comprehensive Band Quality Assessment', 
                     fontsize=13, fontweight='bold', y=0.995)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '10_band_quality_assessment.png', 
+        plt.savefig(self.output_dir / '10_band_quality_assessment.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 10_band_quality_assessment.png")
+        logger.info("Saved: 10_band_quality_assessment.pdf")
     
     def plot_spatial_statistics(self):
         """Analyze spatial statistics (mean image, variance, etc)."""
@@ -586,10 +586,10 @@ class HyMarsEDA:
         plt.suptitle('Spatial Statistical Maps', 
                     fontsize=13, fontweight='bold', y=0.998)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '11_spatial_statistics.png', 
+        plt.savefig(self.output_dir / '11_spatial_statistics.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 11_spatial_statistics.png")
+        logger.info("Saved: 11_spatial_statistics.pdf")
     
     def plot_dimensionality_comparison(self):
         """Compare PCA dimensionality reduction results across datasets."""
@@ -628,10 +628,10 @@ class HyMarsEDA:
         plt.suptitle('Principal Component Analysis (2D Projection)', 
                     fontsize=13, fontweight='bold', y=1.00)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '12_dimensionality_reduction.png', 
+        plt.savefig(self.output_dir / '12_dimensionality_reduction.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 12_dimensionality_reduction.png")
+        logger.info("Saved: 12_dimensionality_reduction.pdf")
     
     def plot_missing_data_analysis(self):
         """Analyze missing or problematic data."""
@@ -659,10 +659,10 @@ class HyMarsEDA:
         plt.suptitle('Missing/Problematic Data Detection', 
                     fontsize=13, fontweight='bold', y=1.00)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '13_missing_data_analysis.png', 
+        plt.savefig(self.output_dir / '13_missing_data_analysis.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 13_missing_data_analysis.png")
+        logger.info("Saved: 13_missing_data_analysis.pdf")
     
     def plot_statistical_summary(self, stats):
         """Create a comprehensive statistical summary visualization."""
@@ -735,10 +735,10 @@ class HyMarsEDA:
         
         plt.suptitle('Comprehensive Statistical Summary', 
                     fontsize=14, fontweight='bold', y=0.998)
-        plt.savefig(self.output_dir / '14_statistical_summary.png', 
+        plt.savefig(self.output_dir / '14_statistical_summary.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 14_statistical_summary.png")
+        logger.info("Saved: 14_statistical_summary.pdf")
     
     def plot_inter_dataset_comparison(self, stats):
         """Compare characteristics across datasets."""
@@ -820,10 +820,10 @@ class HyMarsEDA:
         plt.suptitle('Inter-Dataset Comparative Analysis', 
                     fontsize=13, fontweight='bold', y=0.998)
         plt.tight_layout()
-        plt.savefig(self.output_dir / '15_inter_dataset_comparison.png', 
+        plt.savefig(self.output_dir / '15_inter_dataset_comparison.pdf', 
                    bbox_inches='tight', dpi=300)
         plt.close()
-        logger.info("Saved: 15_inter_dataset_comparison.png")
+        logger.info("Saved: 15_inter_dataset_comparison.pdf")
     
     def run_complete_analysis(self):
         """Execute the complete EDA pipeline."""
