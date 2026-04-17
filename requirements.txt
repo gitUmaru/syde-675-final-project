@@ -10,4 +10,7 @@ shapely
 scikit-learn
 imagecodecs
 wandb
--e .    pip 
+scipy
+numpy
+seaborn
+-e .
